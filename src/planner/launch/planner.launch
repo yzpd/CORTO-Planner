@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find planner)/rviz/rviz.rviz" output="screen" />
+
+    <node name="planner_node" pkg="planner" type="planner_node" output="screen">
+        <param name="map_file" value="$(find planner)/src/medium_obstacles.json"/>
+        <param name="start_pos_x" value="1.0"/>
+        <param name="start_pos_y" value="1.0"/>
+        <param name="start_pos_z" value="0.5"/>
+        <param name="goal_pos_x" value="21.8"/>
+        <param name="goal_pos_y" value="12.7"/>
+        <param name="goal_pos_z" value="0.5"/>
+        <param name="ref/max_velocity" value="5.0"/>
+        <param name="ref/max_acceleration" value="5.0"/>
+        <param name="MaxPointCloud" value="10000"/>
+        <param name="nmpc/maxVel" value="5.0"/>
+        <param name="nmpc/real_maxVel" value="5.0"/>
+        <param name="n_sweep" value="7"/>
+        <param name="poly_degree" value="3"/>
+        <param name="frame" value="PTF"/>
+        <param name="obstacle_inflation" value="0.1"/>
+    </node>
+</launch>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>planner</name>
+  <version>0.0.1</version>
+  <description>A trajectory planning package for quadrotors</description>
+
+  <!-- One or more maintainers responsible for package -->
+  <maintainer email="honghao.pan@durham.ac.uk">honghao</maintainer>
+
+  <license>Apache 2.0</license>
+
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>eigen3</build_depend>
+  
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>visualization_msgs</build_export_depend>
+  <build_export_depend>tf</build_export_depend>
+  <build_export_depend>eigen3</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>eigen3</exec_depend>
+</package>
